@@ -11,6 +11,6 @@ import { CourseCardComponent } from './course-card/course-card.component';
 })
 export class AppComponent {
 
-  coreCourse = COURSES[1];
+  coreCourse = COURSES[0];
 
 }
