@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { Course } from '../model/course'; 
 
 @Component({
   selector: 'course-card',
@@ -10,5 +11,5 @@ import { CommonModule } from '@angular/common';
 })
 export class CourseCardComponent {
   @Input()
-  title:string;
+  course:Course;
 }
