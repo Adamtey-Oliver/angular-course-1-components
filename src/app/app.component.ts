@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import {COURSES} from '../db-data';
 import { CourseCardComponent } from './course-card/course-card.component';
+import { Course } from './model/course';
 
 @Component({
   selector: 'app-root',
-  // standalone:  true,
+  standalone:  true,
   // imports: [CourseCardComponent],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
@@ -17,7 +18,7 @@ export class AppComponent {
 
   ngrxCourse = COURSES[2]
 
-  onCardClicked(){
-    console.log("App componet - click event bubbled..");
+  onCourseSelected(course:Course){
+    console.log("App componet - click event bubbled..", course);
   }
 }
