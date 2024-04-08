@@ -12,4 +12,17 @@ import { Course } from '../model/course';
 export class CourseCardComponent {
   @Input()
   course:Course;
+
+  constructor() {
+
+  }
+
+
+  ngOnInit() {
+    
+  }
+
+  onCourseViewed(){
+    console.log("card component - button clicked...")
+  }
 }
