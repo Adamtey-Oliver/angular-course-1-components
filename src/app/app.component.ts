@@ -5,7 +5,7 @@ import { Course } from './model/course';
 
 @Component({
   selector: 'app-root',
-  standalone:  true,
+  // standalone:  true,
   // imports: [CourseCardComponent],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
