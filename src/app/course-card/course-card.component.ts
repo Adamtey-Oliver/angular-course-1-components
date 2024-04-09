@@ -1,7 +1,6 @@
-import { Component, Input, OnInit, Output } from '@angular/core';
+import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Course } from '../model/course'; 
-import { EventEmitter } from 'stream';
 
 @Component({
   selector: 'course-card',
