@@ -12,7 +12,9 @@
             <course-card 
                 [course]="course" (courseSelected)="onCourseSelected($event)" />
         }
-        
+        @empty {
+            <h1>No courses found!</h1>
+        }
     
         <!-- <course-card (courseSelected)="onCourseSelected($event)" [course]="rxjsCourse"></course-card>
     
