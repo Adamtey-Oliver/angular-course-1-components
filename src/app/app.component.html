@@ -5,13 +5,19 @@
 
 </div>
 
-<div class="courses">
+<div>
+    <div class="courses">
 
-    <course-card (courseSelected)="onCourseSelected($event)" [course]="coreCourse"></course-card>
-
-    <course-card (courseSelected)="onCourseSelected($event)" [course]="rxjsCourse"></course-card>
-
-    <course-card (courseSelected)="onCourseSelected($event)" [course]="ngrxCourse"></course-card>
+        @for (course of courses; track course.id){
+            <course-card 
+                [course]="course" (courseSelected)="onCourseSelected($event)" />
+        }
+        
+    
+        <!-- <course-card (courseSelected)="onCourseSelected($event)" [course]="rxjsCourse"></course-card>
+    
+        <course-card (courseSelected)="onCourseSelected($event)" [course]="ngrxCourse"></course-card> -->
+    </div>
 </div>
 
 
