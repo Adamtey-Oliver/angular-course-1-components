@@ -8,7 +8,7 @@
 <div>
     <div class="courses">
 
-        @for (course of courses; track course.id;
+        @for (course of courses; track $index;
          let first = $first; let last = $last; let even = $even; let odd = $odd){
             <course-card 
                 [course]="course"

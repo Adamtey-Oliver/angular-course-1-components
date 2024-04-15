@@ -23,4 +23,8 @@ export class AppComponent {
   onCourseSelected(course:Course){
     console.log("App componet - click event bubbled..", course);
   }
+
+   trackCourse(index:number, course:Course){
+    return course.id
+   }
 }
