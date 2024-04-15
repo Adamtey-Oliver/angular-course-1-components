@@ -1,0 +1,7 @@
+course-card.is-even{
+    background: lightgray;
+}
+
+course-card.is-odd{
+    background: lightcyan;
+}
