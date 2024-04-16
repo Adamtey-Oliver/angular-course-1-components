@@ -5,31 +5,28 @@
 
 </div>
 
+
 <div>
     <div class="courses">
+        @for (course of courses; track $index; let first = $first; 
+        let last = $last; let even = $even; let odd = $odd) {
+            <course-card
+            [course]="course"
+            [index]="$index"
+            [class.is-first]="first"
+            [class.is-last]="last"
+            [class.is-even]="even"
+            [class.is-odd]="odd"
 
-        @for (course of courses; track $index;
-         let first = $first; let last = $last; let even = $even; let odd = $odd){
-            <course-card 
-                [course]="course"
-                [index]="$index"
-                [class.is-first]="first"
-                [class.is-last]="last"
-                [class.is-even]="even"
-                [class.is-odd]="odd"
-
-                (courseSelected)="onCourseSelected($event)" />
+            (courseSelected)="onCourseSelected($event)"
+            />
         }
+
         @empty {
             <h1>No courses found!</h1>
         }
-    
-        <!-- <course-card (courseSelected)="onCourseSelected($event)" [course]="rxjsCourse"></course-card>
-    
-        <course-card (courseSelected)="onCourseSelected($event)" [course]="ngrxCourse"></course-card> -->
     </div>
 </div>
-
 
 <!--  
     Promise.resolve()

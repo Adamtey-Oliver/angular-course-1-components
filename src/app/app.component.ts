@@ -19,6 +19,7 @@ export class AppComponent {
   // ngrxCourse = COURSES[2]
 
   courses = COURSES;
+first: any;
 
   onCourseSelected(course:Course){
     console.log("App componet - click event bubbled..", course);
